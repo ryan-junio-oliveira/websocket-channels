@@ -1,0 +1,16 @@
+{
+    "name": "ryan-junio-oliveira/websocket-channels",
+    "description": "Biblioteca PHP para servidor WebSocket com suporte a canais públicos e fechados usando Ratchet",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "WebSocketChannels\\": "src/"
+        }
+    },
+    "require": {
+        "cboden/ratchet": "^0.4.4",
+        "php": ">=8.2"
+    },
+    "minimum-stability": "stable",
+    "license": "MIT"
+}
