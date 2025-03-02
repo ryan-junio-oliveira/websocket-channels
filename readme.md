@@ -36,7 +36,7 @@ $web->run();
 
 Execute o servidor com o seguinte comando:
 ```bash
-php websocket-server.php.php
+php websocket-server.php
 ```
 
 O servidor WebSocket será iniciado na porta `8080`, pronto para aceitar conexões.
