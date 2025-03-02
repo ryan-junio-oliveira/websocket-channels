@@ -82,7 +82,7 @@ class WebSocketServer implements MessageComponentInterface
         $conn->close();
     }
 
-    public function run() : void
+    public function run(string|int $port = 8080): void
     {
         $server = IoServer::factory(
             new HttpServer(
@@ -90,9 +90,16 @@ class WebSocketServer implements MessageComponentInterface
                     new WebSocketServer()
                 )
             ),
-            8080
+            $port
         );
 
+        $this->info("Websocket running on port $port");
+
         $server->run();
+    }
+
+    private function info(string $msg) : void
+    {
+        echo $msg . PHP_EOL;
     }
 }

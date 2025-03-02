@@ -11,6 +11,16 @@
         "cboden/ratchet": "^0.4.4",
         "php": ">=8.2"
     },
+    "extra":{
+        "laravel" : {
+            "providers": [
+                "WebSocketChannels\\Laravel\\WebSocketChannelsServiceProvider"
+            ],
+            "commands": [
+                "WebSocketChannels\\Laravel\\Console\\Commands\\WebSocketChannelsServerCommand"
+            ]
+        }
+    },
     "minimum-stability": "stable",
     "license": "MIT"
 }
